@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina5_9" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,14 +20,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BullsEye" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="oY4-Wb-ihC">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WZE-gw-jSl">
-                                <rect key="frame" x="49.5" y="17" width="568" height="341"/>
+                                <rect key="frame" x="122" y="17" width="568" height="341"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIk-ua-qqk">
                                         <rect key="frame" x="234" y="181" width="100" height="37"/>
@@ -154,10 +154,30 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oY4-Wb-ihC" secondAttribute="bottom" id="SJ9-M6-KL9"/>
                             <constraint firstItem="oY4-Wb-ihC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TKi-SF-JZ0"/>
                             <constraint firstItem="WZE-gw-jSl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XET-Sa-z4j"/>
+                            <constraint firstAttribute="bottom" secondItem="oY4-Wb-ihC" secondAttribute="bottom" id="Xp6-Z3-9N4"/>
+                            <constraint firstItem="oY4-Wb-ihC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="a7P-dZ-3mm"/>
+                            <constraint firstAttribute="trailing" secondItem="oY4-Wb-ihC" secondAttribute="trailing" id="dYC-CP-m30"/>
                             <constraint firstItem="oY4-Wb-ihC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kdZ-cc-ZAN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oY4-Wb-ihC" secondAttribute="trailing" id="uAf-gF-Rnf"/>
+                            <constraint firstItem="oY4-Wb-ihC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wxI-vq-CsA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Xp6-Z3-9N4"/>
+                                <exclude reference="a7P-dZ-3mm"/>
+                                <exclude reference="dYC-CP-m30"/>
+                                <exclude reference="wxI-vq-CsA"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Xp6-Z3-9N4"/>
+                                <include reference="a7P-dZ-3mm"/>
+                                <include reference="dYC-CP-m30"/>
+                                <include reference="wxI-vq-CsA"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="roundLabel" destination="1Yn-he-nGY" id="gu7-2J-P61"/>
@@ -175,18 +195,18 @@
             <objects>
                 <viewController id="KyG-vL-6Xa" customClass="AboutViewController" customModule="BullsEye" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hHX-tt-rWp">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="IxV-PC-X5r">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                             </imageView>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DBW-WN-t6U">
-                                <rect key="frame" x="20" y="20" width="627" height="290"/>
+                                <rect key="frame" x="64" y="20" width="684" height="269"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqA-qd-CxS">
-                                <rect key="frame" x="283.5" y="318" width="100" height="37"/>
+                                <rect key="frame" x="356" y="297" width="100" height="37"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="Close" backgroundImage="Button-Normal">
@@ -203,8 +223,12 @@
                         <constraints>
                             <constraint firstItem="IxV-PC-X5r" firstAttribute="leading" secondItem="OpQ-tB-2ga" secondAttribute="leading" id="4A9-95-fDX"/>
                             <constraint firstItem="IxV-PC-X5r" firstAttribute="top" secondItem="OpQ-tB-2ga" secondAttribute="top" id="6Ww-qW-XmG"/>
+                            <constraint firstItem="IxV-PC-X5r" firstAttribute="leading" secondItem="hHX-tt-rWp" secondAttribute="leading" id="AUN-52-XEx"/>
                             <constraint firstItem="VqA-qd-CxS" firstAttribute="centerX" secondItem="hHX-tt-rWp" secondAttribute="centerX" id="NlR-zx-7KI"/>
                             <constraint firstItem="OpQ-tB-2ga" firstAttribute="bottom" secondItem="VqA-qd-CxS" secondAttribute="bottom" constant="20" id="Ony-as-jHE"/>
+                            <constraint firstItem="IxV-PC-X5r" firstAttribute="top" secondItem="hHX-tt-rWp" secondAttribute="top" id="PI4-Pe-OtH"/>
+                            <constraint firstAttribute="trailing" secondItem="IxV-PC-X5r" secondAttribute="trailing" id="RRX-R2-A3L"/>
+                            <constraint firstAttribute="bottom" secondItem="IxV-PC-X5r" secondAttribute="bottom" id="WMT-ow-8tt"/>
                             <constraint firstItem="DBW-WN-t6U" firstAttribute="leading" secondItem="OpQ-tB-2ga" secondAttribute="leading" constant="20" id="WoQ-QK-wbr"/>
                             <constraint firstItem="OpQ-tB-2ga" firstAttribute="trailing" secondItem="DBW-WN-t6U" secondAttribute="trailing" constant="20" id="Zhu-wO-o76"/>
                             <constraint firstItem="VqA-qd-CxS" firstAttribute="top" secondItem="DBW-WN-t6U" secondAttribute="bottom" constant="8" id="hVa-qn-Isf"/>
@@ -213,6 +237,22 @@
                             <constraint firstItem="OpQ-tB-2ga" firstAttribute="trailing" secondItem="IxV-PC-X5r" secondAttribute="trailing" id="yCR-1g-sJk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OpQ-tB-2ga"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="AUN-52-XEx"/>
+                                <exclude reference="PI4-Pe-OtH"/>
+                                <exclude reference="RRX-R2-A3L"/>
+                                <exclude reference="WMT-ow-8tt"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="AUN-52-XEx"/>
+                                <include reference="PI4-Pe-OtH"/>
+                                <include reference="RRX-R2-A3L"/>
+                                <include reference="WMT-ow-8tt"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="webView" destination="DBW-WN-t6U" id="uFY-6N-2Pz"/>
